@@ -1,11 +1,11 @@
 
-import KSGeometry
+import KSGeometryPackage
 
 extension KSRect {
     func quadrantRects() -> [KSQuadrantAssignment: KSRect] {
         let halfWidth = size.width/2.0
         let halfHeight = size.height/2.0
-        let halfSize = Size(width: halfWidth, height: halfHeight)
+        let halfSize = KSSize(width: halfWidth, height: halfHeight)
         var rects = [KSQuadrantAssignment: KSRect]()
         rects[.bottomLeft] = KSRect(origin: origin, size: halfSize)
         rects[.topRight] = KSRect(origin: center, size: halfSize)

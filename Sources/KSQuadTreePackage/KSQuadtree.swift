@@ -24,10 +24,10 @@ public struct KSQuadTreeItem : Equatable, Hashable, XYLocatable {
     public var x: Float { point.x }
     public var y: Float { point.y }
     
-    public var point: Point
+    public var point: KSPoint
     public var object: AnyHashable?
     
-    public init(point: Point, object: AnyHashable?) {
+    public init(point: KSPoint, object: AnyHashable?) {
         self.point = point
         self.object = object
     }
